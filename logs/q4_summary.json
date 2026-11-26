@@ -1,0 +1,494 @@
+{
+  "part_a": {
+    "C_kernel_sweep": [
+      {
+        "kernel": "linear",
+        "C": 0.01,
+        "train_acc": 99.93,
+        "val_acc": 84.9,
+        "sv_fraction": 0.154
+      },
+      {
+        "kernel": "linear",
+        "C": 0.1,
+        "train_acc": 100.0,
+        "val_acc": 84.9,
+        "sv_fraction": 0.1168
+      },
+      {
+        "kernel": "linear",
+        "C": 1.0,
+        "train_acc": 100.0,
+        "val_acc": 84.9,
+        "sv_fraction": 0.1163
+      },
+      {
+        "kernel": "linear",
+        "C": 10.0,
+        "train_acc": 100.0,
+        "val_acc": 84.9,
+        "sv_fraction": 0.1163
+      },
+      {
+        "kernel": "linear",
+        "C": 100.0,
+        "train_acc": 100.0,
+        "val_acc": 84.9,
+        "sv_fraction": 0.1163
+      },
+      {
+        "kernel": "poly",
+        "C": 0.01,
+        "train_acc": 76.48,
+        "val_acc": 66.4,
+        "sv_fraction": 0.775
+      },
+      {
+        "kernel": "poly",
+        "C": 0.1,
+        "train_acc": 96.03,
+        "val_acc": 79.8,
+        "sv_fraction": 0.4177
+      },
+      {
+        "kernel": "poly",
+        "C": 1.0,
+        "train_acc": 99.63,
+        "val_acc": 83.0,
+        "sv_fraction": 0.1962
+      },
+      {
+        "kernel": "poly",
+        "C": 10.0,
+        "train_acc": 99.97,
+        "val_acc": 84.1,
+        "sv_fraction": 0.1242
+      },
+      {
+        "kernel": "poly",
+        "C": 100.0,
+        "train_acc": 100.0,
+        "val_acc": 84.3,
+        "sv_fraction": 0.1207
+      },
+      {
+        "kernel": "rbf",
+        "C": 0.01,
+        "train_acc": 99.72,
+        "val_acc": 84.8,
+        "sv_fraction": 0.8237
+      },
+      {
+        "kernel": "rbf",
+        "C": 0.1,
+        "train_acc": 99.83,
+        "val_acc": 84.8,
+        "sv_fraction": 0.4022
+      },
+      {
+        "kernel": "rbf",
+        "C": 1.0,
+        "train_acc": 99.95,
+        "val_acc": 84.9,
+        "sv_fraction": 0.205
+      },
+      {
+        "kernel": "rbf",
+        "C": 10.0,
+        "train_acc": 100.0,
+        "val_acc": 84.5,
+        "sv_fraction": 0.1905
+      },
+      {
+        "kernel": "rbf",
+        "C": 100.0,
+        "train_acc": 100.0,
+        "val_acc": 84.5,
+        "sv_fraction": 0.1905
+      }
+    ],
+    "selected_setting": {
+      "kernel": "linear",
+      "C": 0.01
+    },
+    "selected_val_acc": 84.9,
+    "final_test_acc": 84.96
+  },
+  "part_b": {
+    "difficult_pairs": [
+      {
+        "class1": "cat",
+        "class2": "dog",
+        "mutual_test_errors": 233,
+        "closest_test_examples": [
+          {
+            "test_index": 3496,
+            "true_label": "dog",
+            "predicted_label": "cat",
+            "decision_score": 0.0041,
+            "is_error": true
+          },
+          {
+            "test_index": 6591,
+            "true_label": "dog",
+            "predicted_label": "dog",
+            "decision_score": -0.0058,
+            "is_error": false
+          },
+          {
+            "test_index": 7399,
+            "true_label": "cat",
+            "predicted_label": "dog",
+            "decision_score": -0.0083,
+            "is_error": true
+          },
+          {
+            "test_index": 1957,
+            "true_label": "cat",
+            "predicted_label": "cat",
+            "decision_score": 0.0085,
+            "is_error": false
+          },
+          {
+            "test_index": 3390,
+            "true_label": "cat",
+            "predicted_label": "cat",
+            "decision_score": 0.0095,
+            "is_error": false
+          }
+        ],
+        "top_support_vectors": [
+          {
+            "train_index": 34546,
+            "label": "cat",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 41368,
+            "label": "cat",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 700,
+            "label": "cat",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 24341,
+            "label": "cat",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 18477,
+            "label": "cat",
+            "dual_coefficient": 0.01
+          }
+        ]
+      },
+      {
+        "class1": "bird",
+        "class2": "cat",
+        "mutual_test_errors": 98,
+        "closest_test_examples": [
+          {
+            "test_index": 4244,
+            "true_label": "bird",
+            "predicted_label": "bird",
+            "decision_score": 0.0006,
+            "is_error": false
+          },
+          {
+            "test_index": 8493,
+            "true_label": "bird",
+            "predicted_label": "cat",
+            "decision_score": -0.0115,
+            "is_error": true
+          },
+          {
+            "test_index": 5840,
+            "true_label": "bird",
+            "predicted_label": "cat",
+            "decision_score": -0.0208,
+            "is_error": true
+          },
+          {
+            "test_index": 9967,
+            "true_label": "cat",
+            "predicted_label": "bird",
+            "decision_score": 0.0239,
+            "is_error": true
+          },
+          {
+            "test_index": 5547,
+            "true_label": "bird",
+            "predicted_label": "bird",
+            "decision_score": 0.025,
+            "is_error": false
+          }
+        ],
+        "top_support_vectors": [
+          {
+            "train_index": 22607,
+            "label": "bird",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 43542,
+            "label": "bird",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 18766,
+            "label": "bird",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 23289,
+            "label": "bird",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 26912,
+            "label": "bird",
+            "dual_coefficient": 0.01
+          }
+        ]
+      },
+      {
+        "class1": "bird",
+        "class2": "deer",
+        "mutual_test_errors": 97,
+        "closest_test_examples": [
+          {
+            "test_index": 4730,
+            "true_label": "bird",
+            "predicted_label": "bird",
+            "decision_score": 0.0027,
+            "is_error": false
+          },
+          {
+            "test_index": 2708,
+            "true_label": "deer",
+            "predicted_label": "deer",
+            "decision_score": -0.0047,
+            "is_error": false
+          },
+          {
+            "test_index": 2608,
+            "true_label": "deer",
+            "predicted_label": "bird",
+            "decision_score": 0.0058,
+            "is_error": true
+          },
+          {
+            "test_index": 1570,
+            "true_label": "deer",
+            "predicted_label": "bird",
+            "decision_score": 0.0071,
+            "is_error": true
+          },
+          {
+            "test_index": 4957,
+            "true_label": "deer",
+            "predicted_label": "deer",
+            "decision_score": -0.0101,
+            "is_error": false
+          }
+        ],
+        "top_support_vectors": [
+          {
+            "train_index": 34707,
+            "label": "bird",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 23289,
+            "label": "bird",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 38045,
+            "label": "bird",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 43542,
+            "label": "bird",
+            "dual_coefficient": 0.01
+          },
+          {
+            "train_index": 18709,
+            "label": "bird",
+            "dual_coefficient": 0.01
+          }
+        ]
+      }
+    ]
+  },
+  "part_c": {
+    "k_sweep": [
+      {
+        "K": 5,
+        "silhouette": 0.1686,
+        "davies_bouldin": 1.9016
+      },
+      {
+        "K": 8,
+        "silhouette": 0.2151,
+        "davies_bouldin": 1.5293
+      },
+      {
+        "K": 10,
+        "silhouette": 0.2245,
+        "davies_bouldin": 1.5193
+      },
+      {
+        "K": 12,
+        "silhouette": 0.1916,
+        "davies_bouldin": 1.7121
+      },
+      {
+        "K": 15,
+        "silhouette": 0.1492,
+        "davies_bouldin": 1.9701
+      }
+    ],
+    "selected_k": 10,
+    "test_ari": 0.6974,
+    "test_nmi": 0.7087,
+    "contingency_table": [
+      [
+        8,
+        8,
+        16,
+        2,
+        7,
+        887,
+        11,
+        17,
+        38,
+        6
+      ],
+      [
+        3,
+        5,
+        39,
+        1,
+        913,
+        15,
+        6,
+        5,
+        12,
+        1
+      ],
+      [
+        59,
+        34,
+        3,
+        32,
+        0,
+        60,
+        43,
+        763,
+        2,
+        4
+      ],
+      [
+        46,
+        35,
+        6,
+        86,
+        2,
+        12,
+        740,
+        59,
+        6,
+        8
+      ],
+      [
+        853,
+        29,
+        0,
+        9,
+        1,
+        13,
+        26,
+        37,
+        5,
+        27
+      ],
+      [
+        36,
+        13,
+        1,
+        746,
+        1,
+        4,
+        146,
+        25,
+        1,
+        27
+      ],
+      [
+        15,
+        900,
+        1,
+        8,
+        3,
+        6,
+        33,
+        27,
+        4,
+        3
+      ],
+      [
+        31,
+        2,
+        8,
+        26,
+        2,
+        9,
+        43,
+        23,
+        0,
+        856
+      ],
+      [
+        3,
+        4,
+        17,
+        2,
+        8,
+        36,
+        12,
+        7,
+        909,
+        2
+      ],
+      [
+        3,
+        4,
+        904,
+        3,
+        37,
+        21,
+        10,
+        3,
+        13,
+        2
+      ]
+    ],
+    "disagreement": {
+      "disagreeing_pair": [
+        "automobile",
+        "truck"
+      ],
+      "svm_separation_acc": 91.15,
+      "svm_mutual_errors": 85,
+      "shared_cluster_id": 4,
+      "automobile_fraction_in_shared": 0.913,
+      "truck_fraction_in_shared": 0.037,
+      "explanation": "While supervised SVM finds an optimal hyperplane separating subtle vehicle cues (e.g. bed geometry, cabin proportion) achieving high accuracy, unsupervised K-Means clusters them together into cluster 4 because both vehicles share identical low-level feature representations (metallic surfaces, wheels, asphalt roads, and boxy contours) without task-specific supervised supervision."
+    }
+  }
+}
